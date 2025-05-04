@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Szidi's Weather App</title>
-    <link rel="stylesheet" href="scr/weatherappstyle.css">
+    <link rel="stylesheet" href="src/weatherappstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
@@ -18,17 +18,21 @@
     </form>
     </header>
     <main>
+<div class="weather-app-data">
     <div>
-        <h1>Paris</h1>
-        <p>
+        <h1 class="weather-app-city">Paris</h1>
+        <p class="weather-app-details">
             Sunday 13:05, scattered clouds
             <br/>
-            Humidity: 66%, Wind: 3.13km/h
+            Humidity: <strong>66%</strong>, Wind:<strong>3.13km/h</strong> 
         </p>
     </div>
-        <div>
-        🌤️ 16° C
+        <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">🌤️</div>
+        <div class="weather-app-temperature"> 16</div>
+        <div class="weather-app-unit">°C</div>
         </div>
+</div>
     </main>
     <footer>
     Coded by 
