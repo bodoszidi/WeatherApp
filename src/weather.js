@@ -1,8 +1,7 @@
 function updateWeather(response) {
-    console.log(response.data);
-    
-    if (response.data.hasOwnProperty("status")){
-        alert(response.data.message)
+    if (response.data.hasOwnProperty("status")) {
+        alert(response.data.message);
+        return;
     }
 
     let temperatureElement = document.querySelector("#temperature");
